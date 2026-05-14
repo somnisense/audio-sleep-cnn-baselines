@@ -53,12 +53,12 @@ Trained on a consumer M2 CPU. No specialized accelerator required.
 
 This is an **algorithm-framework release** — no audio recordings and no feature matrices are distributed with this repository, by design. The 40 participants consented to use of their recordings for this research; that consent does not cover public release of either the audio waveforms or the derived feature matrices.
 
-The code is task-agnostic and runs against any dataset that conforms to the I/O contract:
+The code is task-agnostic and runs against any dataset that conforms to the published I/O contract:
 
-- **Snore task:** directory of 15×13 MFCC matrices saved as space-delimited `.txt`, organized in `0/` (non-snore) and `1/` (snore) subdirectories.
-- **Apnea task:** directory of 200×3 feature matrices saved as colon-delimited `.txt`, organized in `0/` / `1/` / `2/` subdirectories (Normal / Apnea / Hypopnea; class 1 and 2 are merged to the binary "Abnormal" label).
+- **Snore detection** — binary classification of **snore** vs **non-snore** segments, on 15×13 MFCC matrices over 1-second windows.
+- **Sleep apnea detection** — binary classification of **Abnormal** (apnea or hypopnea event) vs **Normal** windows, on 200×3 acoustic-feature matrices over 200-second windows. The three-class PSG scoring convention (**Normal** / **Apnea** / **Hypopnea**) used during dataset construction is merged to binary at training time.
 
-Point the loaders at your own dataset by setting the `DATA_DIR` environment variable, or by editing the `DATA_DIR` constant at the top of `code/run_experiments.py`.
+Point the loaders at your own dataset by setting the `DATA_DIR` environment variable; the directory layout expected by the loaders is documented in the header of `code/run_experiments.py`.
 
 ---
 
