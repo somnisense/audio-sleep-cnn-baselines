@@ -68,7 +68,7 @@ Point the loaders at your own dataset by setting the `DATA_DIR` environment vari
 
 **Doesn't**: claim architectural novelty. The two CNNs follow well-established small-CNN design patterns. The contribution is in the evaluation rigor and the openly published reference numbers.
 
-The paper's §5.3 lists open follow-on questions (front-end choice, attention placement, sequence-model alternatives, label noise, deployment characterization) without committing to a specific follow-up agenda.
+The paper's §5.3 lists open follow-on questions (recording-condition robustness, feature alternatives, sequence-model alternatives, label noise, deployment characterization) without committing to a specific follow-up agenda.
 
 ---
 
@@ -89,19 +89,13 @@ The paper's §5.3 lists open follow-on questions (front-end choice, attention pl
 
 ## License
 
-Code: **MIT**. The included representative samples in `data/` are released under the same license for code-execution verification only.
+Code: **MIT**.
+
+No data is distributed with this repository. See the **Data** section above.
 
 ---
 
 ## About
-
-This is the baselines paper in a three-part research line on on-device audio-based sleep monitoring:
-
-| Repo | Paper | Topic |
-|---|---|---|
-| **audio-sleep-cnn-baselines** *(this)* | Paper A | 2D-CNN snore + 1D-CNN apnea baselines |
-| [`ca1d-sleep-apnea`](https://github.com/somnisense/ca1d-sleep-apnea) | Paper C | Coordinate Attention 1D for apnea, 14k params |
-| [`apnea-compression-pipeline`](https://github.com/somnisense/apnea-compression-pipeline) | Paper E | QAT + structured pruning + CoreML deployment |
 
 Built and maintained by [**SomniAI LLC**](https://github.com/somnisense). The production app that uses this line of work runs on-device on **iOS and Android**: → **[somnisense.top](https://www.somnisense.top)**.
 
