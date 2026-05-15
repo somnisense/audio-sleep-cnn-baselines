@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Paper A — Bootstrap CI analysis of multi-seed baseline results.
+This paper — Bootstrap CI analysis of multi-seed baseline results.
 
 Reads results/metrics_paper_a.csv (10 rows: 5 seeds × 2 tasks) and:
 
   1. Computes per-task per-metric mean ± 95% bootstrap CI
-  2. Generates markdown summary ready to paste into Paper A §4 Results
+  2. Generates markdown summary ready to paste into this paper §4 Results
   3. Generates JSON dump for downstream plot scripts
 
 Output:
@@ -97,7 +97,7 @@ def main():
             }
 
     lines = []
-    lines.append("# Paper A — Multi-Seed Bootstrap Analysis\n")
+    lines.append("# This paper — Multi-Seed Bootstrap Analysis\n")
     lines.append(
         "Two CNN baselines evaluated under a multi-seed protocol with "
         "95% bootstrap confidence intervals.\n"

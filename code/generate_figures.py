@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Paper A — Generate figures from multi-seed results.
+This paper — Generate figures from multi-seed results.
 
   fig1_snore_metrics.png   — Snore CNN 5-seed metric bars with 95% CI
   fig2_apnea_metrics.png   — Apnea CNN 5-seed metric bars with 95% CI
