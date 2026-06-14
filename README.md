@@ -116,4 +116,6 @@ No data is distributed with this repository. See the **Data** section.
 
 Built and maintained by [**SomniAI LLC**](https://github.com/somnisense). The production app (SomniSense, Wellness category) that uses this line of work runs on-device on **iOS and Android**: → **[somnisense.top](https://www.somnisense.top)**.
 
+Research & validation hub: **[apneasense.com/research](https://apneasense.com/research)**.
+
 Questions: `service@somnisense.top`.
